@@ -32,7 +32,7 @@ public class AutomationMain {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
             WebElement inputEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_email")));
-            inputEmail.sendKeys("email");
+            inputEmail.sendKeys("coloque seu email aqui");
 
             WebElement buttonContinue = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("continue")));
             buttonContinue.click();
@@ -50,7 +50,7 @@ public class AutomationMain {
 
             if (resultado.equals("https://www.amazon.com.br/ap/signin")) {
                 WebElement inputPassword = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_password")));
-                inputPassword.sendKeys("password");
+                inputPassword.sendKeys("coloque sua senha aqui");
 
                 WebElement buttonLogin = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signInSubmit")));
                 buttonLogin.click();
